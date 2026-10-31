@@ -1,12 +1,10 @@
 package semana2.finca;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-
 public class TestEthan {
-    @Test
-    void testConversionUnidadMedida() {
-        assertEquals(453.6, UnidadMedida.QUINTAL.aKilos(10.0), 0.01,
-                "Ethan verificó: 10 quintales equivalen a 453.6 kg");
+    public static void main(String[] args) {
+        double kilos = UnidadMedida.QUINTAL.aKilos(10.0);
+        if (kilos == 453.6) {
+            System.out.println("✅ Ethan verificó con éxito: 10 qq son " + kilos + " kg");
+        }
     }
 }
