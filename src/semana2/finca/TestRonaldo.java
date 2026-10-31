@@ -1,14 +1,12 @@
-Según el video, ¿cómo maneja Scrum los cambios en los requisitos?
-Pregunta 3Respuesta
+package semana2.finca;
 
-a.
-Los incorpora normalmente en el siguiente Sprint.
-
-b.
-Los aplica en cualquier momento, incluso a mitad del Sprint.
-
-c.
-No acepta cambios una vez iniciado el proyecto.
-
-d.
-Los decide el Scrum Master sin consultar al equipo.
+public class TestRonaldo {
+    public static void main(String[] args) {
+        try {
+            new Animal("AN-003", "Porcino", -50.0, 2.10);
+            System.err.println("Falló: no detectó el peso negativo");
+        } catch (IllegalArgumentException e) {
+            System.out.println("✅ Ronaldo verificó con éxito: " + e.getMessage());
+        }
+    }
+}
